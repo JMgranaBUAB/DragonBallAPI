@@ -33,7 +33,7 @@ async function displayCharacters() {
         const houseCards = characterData.items.map(createCharacterCard).join('');
         characterSection.innerHTML = houseCards;
     } else {
-        characterSection.innerHTML = '<p>No se pudieron cargar las casas.</p>';
+        characterSection.innerHTML = '<p>No se pudieron cargar los personajes de Dragon Ball.</p>';
     }
 }
 
