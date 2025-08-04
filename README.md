@@ -1,41 +1,4 @@
-# agenciaInmobiliaria
-
-
-
-instalacion :
-
-1. Tener node.js instalado
-2. crear el package.json
-3. instalar dependencia de npm (npm install) json-server
-
-Probar Json server
-    - instala for fake api
-    npm install -g json-server
-
-Ejecutar 
-    json-server --watch houses.json# DragonBallAPI
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-como instsalar
-1 clone el repositorio
-2. tener docker instalado (docker desktop)    
-3. ejecutar imagen dockefile
-   docker build -t web-api-dragonball .
-4. ejecutar el contendor
-   docker run -d -p 80:80 web-api-dragonball
-# DragonBallAPI
+# Web API Dragon Ball
 
 Aplicación web que muestra personajes de Dragon Ball utilizando una API externa.
 
@@ -52,6 +15,17 @@ Aplicación web que muestra personajes de Dragon Ball utilizando una API externa
 ├── package.json
 └── README.md
 ```
+como instalar
+1 clone el repositorio
+2. tener docker instalado (docker desktop)    
+3. Crear imagen dockefile
+   docker build -t web-api-dragonball .
+4. ejecutar el contendor
+   docker run -d -p 80:80 web-api-dragonball
+# DragonBallAPI
+
+Aplicación web que muestra personajes de Dragon Ball utilizando una API externa.
+
 
 ## Instalación y uso
 
@@ -69,21 +43,16 @@ Aplicación web que muestra personajes de Dragon Ball utilizando una API externa
    ```
 5. Accede a la aplicación en [http://localhost](http://localhost).
 
-#### Subir la imagen a Docker Hub
+#### Imagen existente en Docker Hub
 
-1. Inicia sesión en Docker Hub:
+1. Bajar el contenedor desde Docker Hub:
    ```
-   docker login
+   docker pull jmgranabuab74/web-api-dragonball:latest
    ```
-2. Etiqueta la imagen con tu usuario de Docker Hub:
+2. Ejecuta el contenedor:
    ```
-   docker tag web-api-dragonball TU_USUARIO/web-api-dragonball:latest
+   docker run -d -p 80:80 web-api-dragonball
    ```
-3. Sube la imagen al repositorio:
-   ```
-   docker push TU_USUARIO/web-api-dragonball:latest
-   ```
-Reemplaza `TU_USUARIO` por tu nombre de usuario en Docker Hub.
 
 ### Opción 2: Uso local con Node.js
 
