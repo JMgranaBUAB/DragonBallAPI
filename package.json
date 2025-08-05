@@ -7,7 +7,7 @@
         "json-server": "*"
     },
     "devDependencies": {
-        "jest": "*"
+        "jest": "^30.0.5"
     },
     "scripts": {
         "test": "jest"

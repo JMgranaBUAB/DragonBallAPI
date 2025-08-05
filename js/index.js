@@ -25,6 +25,11 @@ function createCharacterCard({ name, image }) {
     `;
 }
 
+// Export para testing
+if (typeof module !== 'undefined') {
+    module.exports = { createCharacterCard };
+}
+
 async function displayCharacters() {
     const characterSection = document.getElementById('characterSection');
     const characterData = await fetchCharactersJson();

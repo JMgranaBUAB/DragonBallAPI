@@ -16,7 +16,7 @@ Aplicación web que muestra personajes de Dragon Ball utilizando una API externa
 └── README.md
 ```
 como instalar
-1 clone el repositorio
+1. clone el repositorio
 2. tener docker instalado (docker desktop)    
 3. Crear imagen dockefile
    docker build -t web-api-dragonball .
@@ -54,15 +54,11 @@ Aplicación web que muestra personajes de Dragon Ball utilizando una API externa
    docker run -d -p 80:80 web-api-dragonball
    ```
 
-### Opción 2: Uso local con Node.js
-
-1. Tener Node.js instalado.
-2. Instala las dependencias:
-   ```
-   npm install
-   ```
-3. Abre `index.html` en tu navegador para ver la aplicación.
 
 ## Créditos
 
-Desarrollado por Jose Miguel Quesada.
+Desarrollado por JM
+
+## Licencia
+
+Este proyecto está licenciado bajo los términos de la licencia MIT. Consulta el archivo LICENSE para más información.
