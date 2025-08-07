@@ -39,7 +39,7 @@ Aplicación web que muestra personajes de Dragon Ball utilizando una API externa
    ```
 4. Ejecuta el contenedor:
    ```
-   docker run --rm -d -p 80:80 jmgranabuab74/web-api-dragonball:latest
+   docker run --rm -d -p 80:80 web-api-dragonball
 
    ```
 5. Accede a la aplicación en [http://localhost](http://localhost).
@@ -52,7 +52,7 @@ Aplicación web que muestra personajes de Dragon Ball utilizando una API externa
    ```
 2. Ejecuta el contenedor:
    ```
-   docker run -d -p 80:80 web-api-dragonball
+   docker run --rm -d -p 80:80 jmgranabuab74/web-api-dragonball:latest
    ```
 
 
